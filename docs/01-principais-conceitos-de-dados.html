@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>01. Principais Conceitos de Dados - Cloud</title>	
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./theme/css/main.css"/>
+</head>
+<body class="flex flex-col h-screen md:w-4/5 lg:w-3/5 xl:w-1/2 mx-auto p-2 text-slate-700 bg-slate-50" style="font-family: 'Maven Pro', sans-serif text-sm">		
+	<header class="pt-2 pb-8">
+		<p class="transition duration-200 text-6xl font-bold mb-8 text-center hover:text-black"><a href=".">Cloud</a></p>
+		<div class="flex justify-between pb-4 border-b-2">
+			<div>
+					<a href="./category/aws.html"
+					class="transition duration-200 px-4 py-2 bg-slate-800 hover:bg-black rounded-md font-semibold text-slate-100">AWS</a>	
+					<a href="./category/ms-azure.html"
+					class="transition duration-200 px-4 py-2 bg-slate-800 hover:bg-black rounded-md font-semibold text-slate-100">MS Azure</a>	
+			</div>
+			<div>
+				<a href="./archives"
+				class="transition duration-200 px-4 py-2 bg-slate-800 hover:bg-black rounded-md font-semibold text-slate-100"> Arquivo </a>
+			</div>
+		</div>
+	</header>
+	<main class="grow">
+
+<article class="md">
+	<p class="text-3xl font-semibold">01. Principais Conceitos de Dados</p>
+	<div class="border-b flex justify-between">
+		<p>Link para o curso: <a target ="_blank" href="https://docs.microsoft.com/pt-br/learn/modules/explore-core-data-concepts/">MS Learn - Principais Conceitos de Dados</a></p>
+		<p class="text-right">Categoria: <a href="./category/ms-azure.html">MS Azure</a></p>
+	</div>
+	<div class="">
+	<h1>Formatos de dados</h1>
+<h2>Dados Estruturados</h2>
+<ul>
+<li>dados estruturados obedecem a um esquema fixo, portanto, todos os dados têm os mesmos campos ou propriedades;</li>
+<li>o esquema para entidades de dados estruturados é tabular. Em outras palavras, os dados são representados em uma ou mais tabelas que consistem em linhas para representar cada instância de uma entidade de dados e colunas para representar os atributos da entidade;</li>
+</ul>
+<h2>Dados Semiestruturados</h2>
+<ul>
+<li>dados semiestruturados são informações que têm alguma estrutura, mas que permitem alguma variação entre instâncias da entidade;</li>
+<li>um formato comum para dados semiestruturados é o JSON (JavaScript Object Notation);</li>
+</ul>
+<h2>Dados não Estruturados</h2>
+<ul>
+<li>documentos, imagens, dados de áudio e vídeo e arquivos binários que podem não ter uma estrutura específica;</li>
+</ul>
+<h1>Armazenamento de Arquivos</h1>
+<h2>Arquivos de texto delimitado</h2>
+<ul>
+<li>o formato mais comum para dados delimitados é CSV (valores separados por vírgula) nos quais os campos são separados por vírgulas e as linhas terminam com um retorno de carro/nova linha;</li>
+<li>o texto delimitado é uma boa opção para dados estruturados que precisam ser acessados por uma ampla variedade de aplicativos e serviços em um formato legível;</li>
+</ul>
+<h2>JSON (JavaScript Object Notation)</h2>
+<ul>
+<li>JSON é um formato onipresente no qual um esquema de documento hierárquico é usado para definir entidades de dados (objetos) que têm vários atributos;</li>
+<li>Cada atributo pode ser um objeto (ou uma coleção de objetos), tornando o JSON um formato flexível que é bom para dados estruturados e semiestruturados;</li>
+</ul>
+<h2>Linguagem XML</h2>
+<ul>
+<li>o XML sido amplamente substituído pelo formato JSON que é menos detalhado, mas ainda há alguns sistemas que usam XML para representar dados;</li>
+<li>usa marcas delimitadas por colchetes angulares (../) para definir elementos e atributos;</li>
+</ul>
+<h2>BLOB (objeto binário grande)</h2>
+<ul>
+<li>os tipos comuns de dados armazenados como binários incluem imagens, vídeo, áudio e documentos específicos de aplicativo;</li>
+<li>ao trabalhar com esses dados, os profissionais de dados geralmente se referem aos arquivos de dados como BLOBs (objetos binários grandes);</li>
+</ul>
+<h2>Formatos de arquivo otimizados</h2>
+<ul>
+<li>alguns formatos de arquivo especializados que permitem a compactação, a indexação e o armazenamento e o processamento eficientes foram desenvolvidos;</li>
+<li>alguns formatos comuns de arquivo otimizados que você verá incluem Avro, ORC e Parquet;</li>
+</ul>
+<h1>Bancos de dados</h1>
+<h2>Bancos de Dados Relacionais</h2>
+<ul>
+<li>bancos de dados relacionais são comumente usados para armazenar e consultar dados estruturados;</li>
+<li>os dados são armazenados em tabelas que representam entidades, como clientes, produtos ou pedidos de venda;</li>
+<li>cada instância de uma entidade recebe uma chave primária que a identifica de maneira exclusiva;</li>
+<li>normalização de dados: eliminação de valores de dados duplicados através do uso de chaves primárias e secundárias para referenciar entidades de dados entre tabelas;</li>
+</ul>
+<h2>Bancos de Dados não Relacionais</h2>
+<ul>
+<li>os bancos de dados não relacionais geralmente são chamados de banco de dados NoSQL;</li>
+<li>há quatro tipos comuns de banco de dados não relacionais normalmente em uso:<ol>
+<li>Bancos de dados de chave-valor nos quais cada registro consiste em uma chave exclusiva e um valor associado, que pode estar em qualquer formato;</li>
+<li>Bancos de dados de documentos, que são uma forma específica de banco de dados de chave-valor na qual o valor é um documento JSON (em que o sistema é otimizado para análise e consulta);</li>
+<li>Bancos de dados de família de colunas que podem armazenar dados tabulares que abrangem linhas e colunas; você também pode dividir as colunas em grupos conhecidos como famílias de colunas. Cada família de colunas contém um conjunto de colunas que estão logicamente relacionadas;</li>
+<li>Bancos de dados de grafo, que armazenam entidades como nós com links para definir relações entre eles;</li>
+</ol>
+</li>
+</ul>
+<h1>Processamento de dados</h1>
+<h2>Processamento de Dados Transacionais</h2>
+<ul>
+<li>um sistema transacional registra transações que encapsulam eventos específicos que a organização deseja controlar;</li>
+<li>os sistemas transacionais geralmente são de alto volume, às vezes manipulando muitos milhões de transações em um dia. Os dados que estão sendo processados têm que estar acessíveis com rapidez;</li>
+<li>o trabalho executado por sistemas transacionais é geralmente conhecido como <strong>OLTP (Processamento de Transações Online)</strong>;</li>
+<li>as soluções OLTP dependem de um sistema de banco de dados no qual o armazenamento de dados é otimizado para operações de leitura e gravação para dar suporte a cargas de trabalho transacionais nas quais os registros de dados são criados, recuperados, atualizados e excluídos (essas operações são geralmente chamadas de CRUD);</li>
+<li>os sistemas OLTP impõem transações compatíveis com a semântica conhecida como ACID:<ol>
+<li><strong>Atomicidade</strong>: cada transação é tratada como uma única unidade, que é totalmente bem-sucedida ou que falha completamente;</li>
+<li><strong>Consistência</strong>: as transações só podem conduzir os dados do banco de dados de um estado válido para outro estado válido;</li>
+<li><strong>Isolamento</strong>: as transações simultâneas não podem interferir entre si e devem resultar em um estado consistente do banco de dados;</li>
+<li><strong>Durabilidade</strong>: quando uma transação tiver sido confirmada, ela permanecerá confirmada;</li>
+</ol>
+</li>
+</ul>
+<p><img alt="MSA 01 - transacional" src="./images/MSAzure/MSA01-transacional.png"></p>
+<h2>Processamento de Dados Analíticos</h2>
+<ul>
+<li>o processamento de dados analíticos normalmente usa sistemas somente leitura (ou read-mostly) que armazenam grandes volumes de dados históricos ou métricas de negócios;</li>
+<li>os detalhes específicos de um sistema de processamento analítico podem variar entre as soluções, mas uma arquitetura comum de análise de escala empresarial tem esta aparência:<ol>
+<li>Os arquivos de dados podem ser armazenados em um data lake central para análise;</li>
+<li>Um processo de ETL (extração, transformação e carregamento) copia dados de arquivos e bancos de dados OLTP para um data warehouse otimizado para atividade de leitura;</li>
+<li>Os dados no data warehouse podem ser agregados e carregados em um modelo OLAP (processamento analítico online) ou cubo;</li>
+<li>Os dados no data lake, no data warehouse e no modelo analítico podem ser consultados para produzir relatórios, visualizações e painéis;
+<img alt="MSA 02 - analitico" src="./images/MSAzure/MSA02-analitico.png"></li>
+</ol>
+</li>
+<li>os data lakes são comuns em cenários de processamento analítico de dados modernos, em que um grande volume de dados baseados em arquivo deve ser coletado e analisado;</li>
+<li>os data warehouses são uma forma estabelecida de armazenar dados em um esquema relacional otimizado para operações de leitura – principalmente consultas para dar suporte a relatórios e à visualização de dados;</li>
+<li>um modelo OLAP é um tipo agregado de armazenamento de dados que é otimizado para cargas de trabalho analíticas. As agregações de dados são feitas entre dimensões em diferentes níveis;</li>
+</ul>
+	</div>
+</article>	
+
+<div class="mt-4 border-t text-right">
+	<p class="font-semibold">Artigos em MS Azure:</p>
+	<ol>
+			
+		<li>
+			<a href="./01-principais-conceitos-de-dados.html">01. Principais Conceitos de Dados</a>
+		</li>
+			
+			
+		<li>
+			<a href="./02-funcoes-e-servicos-de-dados.html">02. Funções e Serviços de Dados</a>
+		</li>
+			
+		<li>
+			<a href="./03-conceitos-fundamentais-de-dados-relacionais.html">03. Conceitos Fundamentais de Dados Relacionais</a>
+		</li>
+			
+		<li>
+			<a href="./04-servicos-de-banco-de-dados-relacional-no-azure.html">04. Serviços de Banco de Dados Relacional no Azure</a>
+		</li>
+			
+	</ol>
+</div>
+
+	</main>
+	<div id="footer" class="text-center pt-8 pb-2">
+		Desenvolvido por thigoap
+	</div>
+</body>
+</html>

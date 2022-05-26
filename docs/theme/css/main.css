@@ -1,0 +1,40 @@
+.md h1 {
+  font-size: 28px; 
+  padding: 12px 0px 6px;}
+.md h2 {
+  color: #243fb8;
+  font-size: 20px;
+  padding-top: 6px; }
+.md h3 {
+    font-size: 16px;
+    padding: 4px 0px;
+    font-weight: bold; }
+  
+.md a {
+    color: #153be4;
+    text-decoration: none; }
+
+.md ul li {
+  list-style-type: square;
+  list-style-position: inside; }
+.md li ul li {
+  padding-left: 16px;
+  list-style-type: circle;
+  list-style-position: inside; }
+.md ol li {
+  list-style-type: upper-greek; }
+.md li ol li {
+  padding-left: 16px; }
+
+.md tr td {
+  border-width: 1px 1px;
+  border-style: solid;
+  padding-left: 2px;
+}
+.md tr th {
+  background-color: #cbd5e1;
+  padding-left: 2px;
+}
+
+
+

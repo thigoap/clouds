@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}{{ article.title }} - {{ SITENAME }}{% endblock %}
+
+{% block content %}
+
+<article class="md">
+	<p class="text-3xl font-semibold">{{ article.title }}</p>
+	<div class="border-b flex justify-between">
+		<p>Link para o curso: <a target ="_blank" href="{{ article.link }}">{{ article.course }}</a></p>
+		<p class="text-right">Categoria: <a href="{{ SITEURL }}/{{ category.url }}">{{ article.category }}</a></p>
+	</div>
+	<div class="">
+	{{ article.content }}
+	</div>
+</article>	
+
+<div class="mt-4 border-t text-right">
+	<p class="font-semibold">Artigos em {{ article.category }}:</p>
+	<ol>
+	{% for other in articles %}
+		{% if other.category == article.category %}
+		<li>
+			<a href="{{ SITEURL }}/{{ other.url }}">{{ other.title }}</a>
+		</li>
+		{% endif %}			
+	{% endfor %}
+	</ol>
+</div>
+
+{% endblock %}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>02. Funções e Serviços de Dados - Cloud</title>	
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./theme/css/main.css"/>
+</head>
+<body class="flex flex-col h-screen md:w-4/5 lg:w-3/5 xl:w-1/2 mx-auto p-2 text-slate-700 bg-slate-50" style="font-family: 'Maven Pro', sans-serif text-sm">		
+	<header class="pt-2 pb-8">
+		<p class="transition duration-200 text-6xl font-bold mb-8 text-center hover:text-black"><a href=".">Cloud</a></p>
+		<div class="flex justify-between pb-4 border-b-2">
+			<div>
+					<a href="./category/aws.html"
+					class="transition duration-200 px-4 py-2 bg-slate-800 hover:bg-black rounded-md font-semibold text-slate-100">AWS</a>	
+					<a href="./category/ms-azure.html"
+					class="transition duration-200 px-4 py-2 bg-slate-800 hover:bg-black rounded-md font-semibold text-slate-100">MS Azure</a>	
+			</div>
+			<div>
+				<a href="./archives"
+				class="transition duration-200 px-4 py-2 bg-slate-800 hover:bg-black rounded-md font-semibold text-slate-100"> Arquivo </a>
+			</div>
+		</div>
+	</header>
+	<main class="grow">
+
+<article class="md">
+	<p class="text-3xl font-semibold">02. Funções e Serviços de Dados</p>
+	<div class="border-b flex justify-between">
+		<p>Link para o curso: <a target ="_blank" href="https://docs.microsoft.com/pt-br/learn/modules/explore-roles-responsibilities-world-of-data/">MS Learn - Funções e Serviços de Dados</a></p>
+		<p class="text-right">Categoria: <a href="./category/ms-azure.html">MS Azure</a></p>
+	</div>
+	<div class="">
+	<h1>Cargos de trabalho no Mundo dos Dados</h1>
+<h2>Administrador de Banco de Dados</h2>
+<ul>
+<li>responsável pelos aspectos de design, implementação, manutenção e operação de sistemas de bancos de dados locais e baseados em nuvem;</li>
+<li>responsável pela disponibilidade geral e pelo desempenho e otimizações consistentes dos bancos de dados;</li>
+<li>responsável por gerenciar a segurança dos dados nos bancos de dados, conceder privilégios sobre os dados, além de conceder ou negar acesso aos usuários conforme apropriado;</li>
+</ul>
+<h2>Engenheiro de Dados</h2>
+<ul>
+<li>responsável por projetar e implementar cargas de trabalho relacionadas a dados, incluindo pipelines de ingestão de dados, atividades de limpeza e transformação e armazenamentos de dados para cargas de trabalho analíticas;</li>
+<li>responsável por garantir que a privacidade dos dados seja mantida dentro da nuvem, abrangendo armazenamentos de dados locais e na nuvem;</li>
+<li>responsávelpor gerenciar e monitorar pipelines de dados para garantir que as cargas de dados tenham o desempenho esperado;</li>
+</ul>
+<h2>Analista de Dados</h2>
+<ul>
+<li>permite que as empresas maximizem o valor dos ativos de dados. Eles são responsáveis por explorar dados para identificar tendências e relações, projetar e criar modelos analíticos e favorecer capacidades avançadas de análise por meio de relatórios e visualizações;</li>
+<li>processa dados brutos e, com base em requisitos empresariais identificados, os transforma para fornecer insights relevantes;</li>
+</ul>
+<h1>Serviços de Dados</h1>
+<h2>SQL do Azure</h2>
+<ul>
+<li>Os serviços específicos de SQL do Azure incluem:<ul>
+<li><strong>Banco de Dados SQL do Azure</strong>: um banco de dados de PaaS (plataforma como serviço) totalmente gerenciado hospedado no Azure;</li>
+<li><strong>Instância Gerenciada de SQL do Azure</strong>: uma instância hospedada do SQL Server com manutenção automatizada, que permite uma configuração mais flexível do que o BD de SQL do Azure, mas com mais responsabilidade administrativa para o proprietário;</li>
+<li><strong>VM de SQL do Azure</strong>: uma máquina virtual com uma instalação do SQL Server, permitindo a máxima capacidade de configuração com total responsabilidade de gerenciamento;</li>
+</ul>
+</li>
+</ul>
+<h2>Banco de dados do Azure para bancos dados relacionais de código aberto</h2>
+<ul>
+<li>O Azure inclui serviços gerenciados para sistemas de banco de dados relacionais populares de código aberto, incluindo:<ul>
+<li><strong>Banco de Dados do Azure para MySQL</strong>: um sistema de gerenciamento de banco de dados de código aberto fácil de usar que é comumente usado em aplicativos da pilha LAMP (Linux, Apache, MySQL e PHP);</li>
+<li><strong>Banco de Dados do Azure para MariaDB</strong>: um sistema de gerenciamento de banco de dados mais recente, criado pelos desenvolvedores originais do MySQL. Desde então, o mecanismo de banco de dados foi reescrito e otimizado para aprimorar o desempenho;</li>
+<li><strong>Banco de dados do Azure para PostgreSQL</strong>: um banco de dados híbrido relacional-objeto. É possível armazenar dados em tabelas relacionais, mas um banco de dados PostgreSQL também permite que você armazene tipos de dados personalizados, com propriedades não relacionais próprias;</li>
+</ul>
+</li>
+</ul>
+<h2>Azure Cosmos DB</h2>
+<ul>
+<li>o Azure Cosmos DB é um sistema de banco de dados não relacional (NoSQL) de escala global que dá suporte a várias APIs (interfaces de programação de aplicativo), permitindo que você armazene e gerencie dados como documentos JSON, pares chave-valor, famílias de colunas e grafos;</li>
+</ul>
+<h2>Armazenamento do Azure</h2>
+<ul>
+<li>o Armazenamento do Azure é um serviço principal do Azure que permite armazenar dados em:<ul>
+<li><strong>Contêineres de blobs</strong>: armazenamento escalonável e econômico para arquivos binários;</li>
+<li><strong>Compartilhamentos de arquivos</strong>: compartilhamentos de arquivos de rede, semelhante ao que normalmente é encontrado nas redes corporativas;</li>
+<li><strong>Tabelas</strong>: armazenamento de chave-valor para aplicativos que precisam ler e gravar valores de dados rapidamente;</li>
+</ul>
+</li>
+</ul>
+<h2>Fábrica de dados do Azure</h2>
+<ul>
+<li>o Azure Data Factory é um serviço do Azure que permite definir e agendar pipelines de dados para transferir e transformar dados;</li>
+<li>o Azure Data Factory é usado por engenheiros de dados para criar soluções de ETL (extração, transformação e carregamento) que preenchem os armazenamentos de dados analíticos com os dados de sistemas transacionais na organização;</li>
+</ul>
+<h2>Azure Synapse Analytics</h2>
+<ul>
+<li>o Azure Synapse Analytics é uma solução de análise de dados abrangente e unificada que oferece uma interface de serviço única para vários recursos analíticos;</li>
+</ul>
+<h2>Azure Databricks</h2>
+<ul>
+<li>o Azure Databricks é uma versão integrada do Azure da plataforma popular do Databricks, que combina a plataforma de processamento de dados Apache Spark com a semântica de banco de dados SQL e uma interface de gerenciamento integrada para permitir a análise de dados em larga escala;</li>
+</ul>
+<h2>Azure HDInsight</h2>
+<ul>
+<li>o Azure HDInsight é um serviço do Azure que fornece clusters hospedados no Azure para tecnologias populares de código aberto de processamento de Big Data do Apache, incluindo:<ul>
+<li><strong>Apache Spark</strong>: um sistema de processamento de dados distribuído que dá suporte a várias linguagens de programação e APIs, incluindo Java, Scala, Python e SQL;</li>
+<li><strong>Apache Hadoop</strong>: um sistema distribuído que usa trabalhos MapReduce para processar grandes volumes de dados com eficiência em vários nós de cluster. Os trabalhos MapReduce podem ser escritos em Java ou abstraídos por interfaces como Apache Hive, uma API baseada em SQL que é executada no Hadoop;</li>
+<li><strong>Apache HBase</strong>: um sistema de código aberto para armazenamento e consulta de dados NoSQL em larga escala;</li>
+<li><strong>Apache Kafka</strong>: um agente de mensagens para processamento de fluxo de dados;</li>
+<li><strong>Apache Storm</strong>: um sistema de código aberto para processamento de dados em tempo real por meio de uma topologia de spouts e bolts;</li>
+</ul>
+</li>
+</ul>
+<h2>Stream Analytics do Azure</h2>
+<ul>
+<li>o Azure Stream Analytics é um mecanismo de processamento de fluxo em tempo real que captura um fluxo de dados de uma entrada, aplica uma consulta para extrair e manipular os dados do fluxo de entrada e grava os resultados em uma saída para análise ou processamento adicional;</li>
+</ul>
+<h2>Azure Data Explorer</h2>
+<ul>
+<li>o Azure Data Explorer é um serviço autônomo que oferece a mesma consulta de alto desempenho de dados de log e telemetria que o runtime do Data Explorer do Azure Synapse no Azure Synapse Analytics;</li>
+</ul>
+<h2>Microsoft Purview</h2>
+<ul>
+<li>o Microsoft Purview fornece uma solução para governança e descoberta de dados de toda a empresa. Use o Microsoft Purview para criar um mapa de seus dados e acompanhar a linhagem de dados em várias fontes de dados e sistemas, permitindo encontrar dados confiáveis para análise e relatórios;</li>
+</ul>
+<h2>Microsoft Power BI</h2>
+<ul>
+<li>o  Microsoft Power BI é uma plataforma para modelagem de dados analíticos e relatórios que os analistas de dados podem usar para criar e compartilhar visualizações de dados interativas;</li>
+</ul>
+	</div>
+</article>	
+
+<div class="mt-4 border-t text-right">
+	<p class="font-semibold">Artigos em MS Azure:</p>
+	<ol>
+			
+		<li>
+			<a href="./01-principais-conceitos-de-dados.html">01. Principais Conceitos de Dados</a>
+		</li>
+			
+			
+		<li>
+			<a href="./02-funcoes-e-servicos-de-dados.html">02. Funções e Serviços de Dados</a>
+		</li>
+			
+		<li>
+			<a href="./03-conceitos-fundamentais-de-dados-relacionais.html">03. Conceitos Fundamentais de Dados Relacionais</a>
+		</li>
+			
+		<li>
+			<a href="./04-servicos-de-banco-de-dados-relacional-no-azure.html">04. Serviços de Banco de Dados Relacional no Azure</a>
+		</li>
+			
+	</ol>
+</div>
+
+	</main>
+	<div id="footer" class="text-center pt-8 pb-2">
+		Desenvolvido por thigoap
+	</div>
+</body>
+</html>

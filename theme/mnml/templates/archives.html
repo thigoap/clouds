@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Archive - {{ SITENAME }}{% endblock %}
+
+{% block content %}
+
+<p class="mb-4">Todos os artigos</p>
+{% for article in articles %}
+    <div class="flex w-full border-b py-1">
+        <p class="grow"><a href="{{ SITEURL }}/{{ article.url }}">
+        <!-- <time datetime="{{ article.date.isoformat() }}" pubdate>{{ article.locale_date }}</time> -->
+        {{ article.title }}</a>
+        </p>
+        <div class="flex items-center text-sm px-3 bg-slate-300 rounded text-slate-900">
+            <p>{{ article.category }}</p>
+        </div>
+    </div>
+{% endfor %}
+
+{% endblock %}
